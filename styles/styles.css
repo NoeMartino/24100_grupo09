@@ -1,10 +1,13 @@
-@import "bootstrap/scss/variables";
-
 .banner {
     background-image: url(../imgs/banner.png);
 }
 
 .card-img-top {
     max-height: 230px;
+    object-fit: cover;
+}
+
+#carouselExampleAutoplaying img {
+    height: 300px;
     object-fit: cover;
 }

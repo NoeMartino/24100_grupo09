@@ -8,30 +8,9 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/ed5fb8ab55.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        /* Estilo de las imágenes del carrusel */
-        #carouselExampleAutoplaying img {
-            height: 300px; /* altura fija */
-            object-fit: cover; /* Ajusta la imagen*/
-        }
-    </style>
 </head>
 <body>
-    <!-- <header>
-        <i class="fa-solid fa-mug-saucer"></i>
-        <h3>CAC.Café-Restó</h3>
-        <ul>
-            <li>
-                <a href="">Menú</a>
-            </li>
-            <li>
-                <a href="./html/formulario.html">Reservas</a>
-            </li>
-            <li>
-                <a href="">Iniciar Sesión</a>
-            </li>
-        </ul>
-    </header> -->
+    <!-- Header -->
     <div class="container">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -53,116 +32,52 @@
         </nav>
     </div>
     <main>
-    
+        <!-- Carousel -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./imgs/banner.png" class="d-block w-100" alt="...">
+                    <img src="./imgs/banner.png" class="d-block w-100" alt="cafeteria">
                     <div class="carousel-caption d-none d-md-block bg-light bg-opacity-25 text-dark rounded">
-                        <h6 class='fs-3 fw-bold'>Desde 1950 ofreciendo la mejor calidad, los mejores sabores y la mayor
-                            comodidad</h6>
+                        <p class='fs-5 fw-bold px-5'>Desde 1950 ofreciendo la mejor calidad, los mejores sabores y la mayor
+                            comodidad.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./imgs/banner2.jpg" class="d-block w-100" alt="...">
+                    <img src="./imgs/banner2.jpg" class="d-block w-100" alt="cafe">
                     <div class="carousel-caption d-none d-md-block bg-light bg-opacity-25 text-dark rounded">
                         <h5 class='fs-3 fw-bold'>Horarios</h5>
-                        <p class='fs-5 fw-bold px-5'>De martes a domingos de 7am a 10pm</p>
+                        <p class='fs-5 fw-bold px-5'>De martes a domingos de 7am a 10pm.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./imgs/banner3.jpg" class="d-block w-100" alt="...">
+                    <img src="./imgs/banner3.jpg" class="d-block w-100" alt="almuerzo">
                     <div class="carousel-caption d-none d-md-block bg-light bg-opacity-25 text-dark rounded">
-                                <h5 class='fs-3 fw-bold'>Ubicación</h5>
-                                <p class='fs-5 fw-bold px-5'>Calle Flores 1234, Ciudad</p>
-                                <button class="btn btn-outline-warning">Mapa</button>
-                            </div>
+                        <h5 class='fs-3 fw-bold'>Ubicación</h5>
+                        <p class='fs-5 fw-bold px-5'>Calle Flores 1234, Ciudad</p>
+                        <button class="btn btn-outline-warning">Mapa</button>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </main>
-        <!-- <section class="banner">
-            <h1>Desde 1950 ofreciendo la mejor calidad, los mejores sabores y la mayor comodidad.</h1>
-            
-            <h2>Horarios</h2>
-            <p>Lunes a Sábados</p>
-            <p>de 7am a 10pm</p>
-            <p>Cerrado domingos y feriados.</p>
-            
-            <h2>Ubicación</h2>
-            <p>Calle Flores 1234, Ciudad</p>
-            <button>Mapa</button>
-        </section> -->
-        <!--<div class="container p-3 w-100">
-            <div class="row justify-content-center">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imgs/banner.png" class="d-block w-100 img-fluid" alt="..." />
-                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-25 text-dark rounded">
-                                <h6 class='fs-3 fw-bold'>Desde 1950 ofreciendo la mejor calidad, los mejores sabores y la mayor
-                                    comodidad</h6>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/banner2.jpg" class="d-block w-100 img-fluid" alt="..." />
-                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-25 text-dark rounded">
-                                <h5 class='fs-3 fw-bold'>Horarios</h5>
-                                <p class='fs-5 fw-bold px-5'>De martes a domingos de 7am a 10pm</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/banner3.jpg" class="d-block w-100 img-fluid" alt="..." />
-                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-25 text-dark rounded">
-                                <h5 class='fs-3 fw-bold'>Ubicación</h5>
-                                <p class='fs-5 fw-bold px-5'>Calle Flores 1234, Ciudad</p>
-                                <button class="btn btn-outline-warning">Mapa</button>
-                            </div>
-                        </div>
-                    </div>-->
-
-                    
-                    <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide-to="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide-to="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                -->
-                </div>
-            </div>
-        </div>
-        <!-- <section>
-            <h3>Tortas y tartas libres</h3>
-            <p>Todos los miéscoles desde las 15 hs.</p>
-    
-            <h3>Menúes vegetarianos y celíacos</h3>
-            <p>Cada día uno diferente.</p>
-
-            <h3>Wifi y climatización</h3>
-            <p>Óptimos espacios para trabajar.</p>
-    
-        </section> -->
-    </main>
+    <!-- Cards -->
     <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
         <div class="col">
             <div class="card h-100">
-                <img src="./imgs/almuerzo2.png" class="card-img-top img-fluid" alt="Menús">
+                <img src="./imgs/almuerzo.png" class="card-img-top img-fluid" alt="Menús">
                 <div class="card-body text-center">
                     <h5 class="card-title">Menús vegetarianos y celíacos</h5>
-                    <p class="card-text">Cada día uno diferente</p>
+                    <p class="card-text">Cada día uno diferente.</p>
                 </div>
             </div>
         </div>
@@ -171,7 +86,7 @@
                 <img src="./imgs/torta.png" class="card-img-top img-fluid" alt="Tortas">
                 <div class="card-body text-center">
                     <h5 class="card-title">Tortas y tartas libres</h5>
-                    <p class="card-text">Todos los miércoles desde las 15 hs. con la compra de un brunch para dos personas</p>
+                    <p class="card-text">Todos los miércoles desde las 15 hs. con la compra de un brunch para dos personas.</p>
                 </div>
             </div>
         </div>
@@ -185,17 +100,7 @@
             </div>
         </div>
     </div>
-    <!-- <footer>
-        <p>© Derechos reservados CAC.Café-Restó 2024</p>
-        <ul>
-            <li>
-                <a href="">Sobre nosotros</a>
-            </li>
-            <li>
-                <a href="">Contáctenos</a>
-            </li>
-        </ul>
-    </footer> -->
+    <!-- Footer -->
     <ul class="nav bg-warning">
         <li class="nav-item me-auto">
             <a class="nav-link text-dark" href="#">©Todos los derechos reservados CAC. Café-Restó 2024</a>
@@ -213,8 +118,8 @@
     <script>
         $(document).ready(function(){
             $('#carouselExampleAutoplaying').carousel({
-                interval: 3000, // Cambia la velocidad del carrusel
-                pause: false // Evita que se pause al pasar el mouse sobre él
+                interval: 5000,
+                pause: false
             });
         });
     </script>
