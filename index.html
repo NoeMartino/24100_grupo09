@@ -26,7 +26,7 @@
                     <a class="navbar-brand" href="./home.html">
                         <img src="./imgs/CAC.png" alt="Logo" height="100" class="d-inline-block align-text-top">
                     </a>
-                    <button class="btn btn-outline-warning" type="submit">Iniciar sesión</button>
+                    <a id="loginBtn" class="btn btn-outline-warning" href="LogIn.html">Iniciar sesión</a>
                 </div>
             </div>
         </nav>
@@ -122,6 +122,25 @@
                 pause: false
             });
         });
+    </script>
+     <!-- Scripts para simular un inicio de sesión -->
+     <script>
+        // Verificar si la sesión está iniciada
+        let sesionIniciada = localStorage.getItem('sesionIniciada');
+    
+        // Si la variable sesionIniciada no está definida en el almacenamiento local la instaciamos como false
+        if (sesionIniciada === null) {
+            sesionIniciada = 'false';
+            localStorage.setItem('sesionIniciada', sesionIniciada);
+        }
+    
+        // Nos traemos el botón de inicio de sesión por su ID
+        const loginButton = document.getElementById('loginBtn');
+    
+        // Cambiar el texto del botón según corresponda
+        if (sesionIniciada === 'true') {
+            loginButton.textContent = 'Cerrar sesión';
+        }
     </script>
 </body>
 </html>
