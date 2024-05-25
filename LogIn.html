@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Login</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <form class="login-form" action="index.html" method="GET">
+            <h2>Iniciar Sesión</h2>
+            <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="loginsubmit">Entrar</button>
+        </form>
+    </div>
+    <!-- Scripts para simular un inicio de sesión almacenando la variable de que nos logueamos-->
+    <script>
+        document.querySelector('.login-form').addEventListener('submit', function(event) {
+            // Esto es para mockear el envio de formulario
+            event.preventDefault();
+            // Mock de inicio de sesión guardando el estado en localStorage
+            localStorage.setItem('sesionIniciada', 'true');
+            // edirigir a la página de inicio después del inicio de sesión
+            window.location.href = './index.html';
+        });
+    </script>
+</body>
+</html>

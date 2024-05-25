@@ -11,3 +11,62 @@
     height: 300px;
     object-fit: cover;
 }
+/* Estilos específicos para la página de login */
+.login-page {
+    background-image: url(../imgs/banner.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-page .login-container {
+    background-color:rgba(245, 222, 179, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-page .login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.login-page .login-form .input-group {
+    margin-bottom: 15px;
+}
+
+.login-page .login-form .input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-page .login-form .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-page .login-form button {
+    padding: 10px;
+    background-color: hsl(29, 100%, 50%);
+    color: rgb(95, 55, 52);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-page .login-form button:hover {
+    background-color: #0056b3;
+}
