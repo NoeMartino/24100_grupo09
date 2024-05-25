@@ -2,8 +2,8 @@
 ## Proyecto pre entrega front end.
 ## Este repositorio contiene los archivos de la pre entrega. En este repositorio encontrarás los siguientes archivos:
 * 24100_grupo09: La carpeta principal del proyecto, que contiene todos los demás archivos.
-* home.html
-* Login.html
+* index.html
+* menu.html
 * styles.css
 * Otros: imgs/layout
 ## Instrucciones para ejecutar el proyecto
