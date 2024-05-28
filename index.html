@@ -124,11 +124,11 @@
         });
     </script>
      <!-- Scripts para simular un inicio de sesión -->
-     <script>
+     <!-- <script>
         // Verificar si la sesión está iniciada
         let sesionIniciada = localStorage.getItem('sesionIniciada');
     
-        // Si la variable sesionIniciada no está definida en el almacenamiento local la instaciamos como false
+        // Si la variable sesionIniciada no está definida en el almacenamiento local la instanciamos como false
         if (sesionIniciada === null) {
             sesionIniciada = 'false';
             localStorage.setItem('sesionIniciada', sesionIniciada);
@@ -141,6 +141,31 @@
         if (sesionIniciada === 'true') {
             loginButton.textContent = 'Cerrar sesión';
         }
+    </script> -->
+    <script>
+    function verificarEstadoSesion() {
+        let sesionIniciada = localStorage.getItem('sesionIniciada');
+
+        if (sesionIniciada === 'true') {
+            loginButton.textContent = 'Cerrar sesión';
+        } else {
+            loginButton.textContent = 'Iniciar sesión';
+        }
+    }
+
+    document.getElementById('loginBtn').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        if (loginButton.textContent === 'Cerrar sesión') {
+            localStorage.removeItem('sesionIniciada');
+            loginButton.textContent = 'Iniciar sesión';
+        } else if (loginButton.textContent === 'Iniciar sesión') {
+            window.location.href = '/html/LogIn.html';
+        }
+    });
+
+    const loginButton = document.getElementById('loginBtn');
+    verificarEstadoSesion();
     </script>
 </body>
 </html>

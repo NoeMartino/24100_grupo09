@@ -8,9 +8,11 @@ const llamarApi = () => {
 
 const mostrarDatos = (drink) => {
     let divTragos = document.createElement('div')
+    divTragos.classList.add("card")
+    divTragos.classList.add("card-drinks")
     divTragos.innerHTML = `
-        <h3>${drink.strDrink}</h3>
-        <img src="${drink.strDrinkThumb}"></img>
+        <h5 class="card-title text-center">${drink.strDrink}</h5>
+        <img src="${drink.strDrinkThumb}" class="card-img-top"></img>
     `
     container.appendChild(divTragos)
 }
