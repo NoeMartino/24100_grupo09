@@ -1,7 +1,7 @@
 const container = document.querySelector("#container")
 
 const llamarApi = () => {
-    const json = fetch("http://www.thecocktaildb.com/api/json/v1/1/search.php?f=w")
+    const json = fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?f=w")
     .then(response => response.json())
     .then(data => data.drinks.forEach(element => mostrarDatos(element)))
 }
