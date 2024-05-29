@@ -26,7 +26,7 @@
                     <a class="navbar-brand" href="./home.html">
                         <img src="./imgs/CAC.png" alt="Logo" height="100" class="d-inline-block align-text-top">
                     </a>
-                    <a id="loginBtn" class="btn btn-outline-warning" href="./html/logIn.html">Iniciar sesión</a>
+                    <a id="loginBtn" class="btn btn-outline-warning" href="./html/login.html">Iniciar sesión</a>
                 </div>
             </div>
         </nav>
@@ -142,7 +142,7 @@
             localStorage.removeItem('sesionIniciada');
             loginButton.textContent = 'Iniciar sesión';
         } else if (loginButton.textContent === 'Iniciar sesión') {
-            window.location.href = '/html/logIn.html';
+            window.location.href = '/html/login.html';
         }
     });
 
