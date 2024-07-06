@@ -13,11 +13,31 @@
     <h2 class="bg-light bg-opacity-25 text-dark rounded p-3">Explorá nuestro más completo menú</h2>
     <button type="button" class="btn btn-light btn-lg m-2" disabled>Cafetería</button>
     <button type="button" class="btn btn-light btn-lg m-2" disabled>Almuerzos</button>
-    <button type="button" class="btn btn-light btn-lg m-2" onclick="llamarApi()">Tragos</button>
+    <button type="button" class="btn btn-light btn-lg m-2" disabled>Tortas y postres</button>
+    <button type="button" class="btn btn-light btn-lg m-2" onclick=llamarApi()>Tragos</button>
     <section>
         <div id="container" class="container-drinks"></div>
+        <div class="bg-light p-3 rounded">
+            <h5 class="text-center">
+                ¿Qué otros tragos deberíamos ofrecer?
+                <br>
+                Dejanos tu sugerencia
+            </h5>
+            <div>
+                <div class="mb-3">
+                    <label for="drink" class="form-label">Nombre del trago:</label>
+                    <input type="drink" name="drink" class="form-control" id="drink">
+                </div>
+                <div class="mb-3">
+                    <label for="ingredients" class="form-label">Ingredientes:</label>
+                    <input type="text" name="ingredients" class="form-control" id="ingredients">
+                </div>
+                <button class="btn btn-primary" onclick=crear()>Enviar</button>
+                <button class="btn btn-primary" onclick=listar()>Mostrar todas las sugerencias</button>
+            </div>
+        </div>
+        <div id="list" class=""></div>
     </section>
-    <button type="button" class="btn btn-light btn-lg m-2" disabled>Tortas y postres</button>
     <a href="../index.html" type="button" class="btn btn-warning btn-lg m-2">Volver</a>
     <script src="../js/menu.js"></script>
 </body>
